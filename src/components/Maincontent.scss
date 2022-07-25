@@ -1,0 +1,155 @@
+$bgcolor:#d3d3d3;
+
+.container-fluid {
+	.row { 
+        margin-top: 20px;
+        margin-left:0;
+
+}
+.col {
+	margin-bottom: 20px;
+}
+.text_editor {
+    border: red!important;
+    background: #fff;
+    color: #000;
+    cursor: text;
+    width:75%!important;
+  }
+  input:focus
+  {
+    border-color:red !important ;
+  }
+.b-right {
+	position: relative;
+	&:after {
+		content: "";
+		background: $bgcolor;
+		position: absolute;
+		bottom: 0;
+		left: 86%;
+		height: 50%;
+		width: 2px;
+	}
+}
+.lcards {
+	.card-title {
+		color: $bgcolor;
+		padding-bottom: 25px;
+	}
+}
+.accordion {
+	border-bottom: 1px solid $bgcolor !important;
+	margin-bottom: 20px !important;
+	.accordion-item { background-color: transparent;
+	box-shadow: none;
+	border: none;
+}
+.accordion-body {
+	background-color: #B7EBBD;
+	padding: 0;
+	width: 24%;
+	margin: 0 50px;
+}
+.accordion-button {
+	border: none;
+	padding: 10px 0;
+	&:focus {
+		box-shadow: none;
+		border: none;
+	}
+	&:not(.collapsed) {
+		background-color: transparent;
+		box-shadow: none;
+		color: #000;
+	}
+}
+#bt1 {
+	&::before {
+		content: "8";
+		position: relative;
+		color: #AC9F3C;
+		opacity: 0.5;
+		font-weight: bold;
+		margin: 0 10px 0 0;
+		font-size: 20px;
+		padding: 5px 15px;
+		background-color: #E9EC6B;
+	}
+}
+#bt2 {
+	&::before {
+		content: "2";
+		position: relative;
+		color: red;
+		opacity: 0.5;
+		margin: 0 10px 0 0;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 5px 15px;
+		background-color: #E9EC6B;
+	}
+}
+#bt3 {
+	&::before {
+		content: "0";
+		position: relative;
+		color: green;
+		opacity: 0.5;
+		font-weight: bold;
+		margin: 0 10px 0 0;
+		font-size: 20px;
+		padding: 5px 15px;
+		background-color: #B7EBBD;
+	}
+}
+}
+}
+
+@media only screen and (max-width: 1024px) {
+	.lcards {
+		>div {
+			width: 33.3%;
+		}
+	}
+	.col {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.lcards {
+		>div {
+			width: 50%;
+		}
+	}
+	.col {
+		width: 100%;
+	}
+    .b-right {
+		&::after {
+			content: none!important;
+		}
+	}
+    .head{
+        >div{
+            text-align: center!important;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+	.lcards {
+		>div {
+			width: 100%;
+		}
+	}
+	.b-right {
+		&::after {
+			content: none!important;
+		}
+	}
+    .head{
+        >div{
+            text-align: center!important;
+        }
+    }
+}

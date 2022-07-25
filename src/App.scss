@@ -1,0 +1,14 @@
+$font-stack: Lato, sans-serif;
+$primary-color:#f2f2f2;
+
+
+html,
+body {
+  font:100% $font-stack;
+  background-color: $primary-color;
+}
+.App {
+  background-color: $primary-color
+  
+}
+
